@@ -24,10 +24,9 @@ public class Main {
     public static int factorial(int numberOne) {
         int res = 1;
 
-        for (int i = 1; i < numberOne; i++) {
+        for (int i = 1; i <= numberOne; i++) {
             res *= i;
         }
-
         return res;
     }
 
@@ -53,11 +52,11 @@ public class Main {
             }
             break;
             case "!": {
-                if (firstNumber>=20){
-                    System.out.println("Please enter number low 20");
+                if (firstNumber > 15 || firstNumber < 0){
+                    System.out.println("Please enter number low 16");
                     throw new InputMismatchException();
                 }
-                result = factorial(firstNumber);
+                result =  factorial(firstNumber);
             }
             break;
             default: {
@@ -83,8 +82,8 @@ public class Main {
                 secondNumber = scanner.nextInt();
                 System.out.println("Enter operation ('+', '-', '*', '/' or '!'(factorial))");
                 userInput = scanner.next();
-
-                System.out.println("You result = " +  result(firstNumber, secondNumber, userInput));
+;
+                System.out.println("You result = " +  String.format("%.2f", result(firstNumber, secondNumber, userInput)));
             } catch (InputMismatchException ex) {
                 System.out.println("Wrong input data!");
                 scanner.nextLine();
@@ -99,6 +98,7 @@ public class Main {
             userInput = scanner.next();
         }
         System.out.println("Goodbye");
+        Double max;
     }
 }
 
