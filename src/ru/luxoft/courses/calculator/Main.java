@@ -98,7 +98,7 @@ public class Main {
             userInput = scanner.next();
         }
         System.out.println("Goodbye");
-        Double max;
+
     }
 }
 
