@@ -1,6 +1,6 @@
 package ru.luxoft.courses.hierarchy.operation;
 
-public enum OperType {
+public enum OperationType {
     SALE,
-    BYE
+    BUY
 }

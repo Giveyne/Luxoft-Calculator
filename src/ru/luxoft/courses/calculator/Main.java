@@ -45,9 +45,9 @@ public class Main {
                 result = multiply(firstNumber, secondNumber);
             break;
             case "/": {
-                if (secondNumber == 0){
-                    throw new ArithmeticException();
-                }
+//                if (secondNumber == 0){
+//                    throw new ArithmeticException();
+//                }
                 result = divide(firstNumber, secondNumber);
             }
             break;

@@ -3,22 +3,22 @@ package ru.luxoft.courses.hierarchy.operation;
 import ru.luxoft.courses.hierarchy.Emmitent;
 
 public class Operation {
-    private OperType operType;
+    private OperationType operationType;
     private String name;
     private Emmitent emmitent;
 
-    public Operation(OperType operType, String name, Emmitent emmitent) {
-        this.operType = operType;
+    public Operation(OperationType operationType, String name, Emmitent emmitent) {
+        this.operationType = operationType;
         this.name = name;
         this.emmitent = emmitent;
     }
 
-    public OperType getOperType() {
-        return operType;
+    public OperationType getOperationType() {
+        return operationType;
     }
 
-    public void setOperType(OperType operType) {
-        this.operType = operType;
+    public void setOperationType(OperationType operationType) {
+        this.operationType = operationType;
     }
 
     public String getName() {

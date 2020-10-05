@@ -1,7 +1,6 @@
 package ru.luxoft.courses.hierarchy;
 
 import java.util.ArrayList;
-import java.util.Currency;
 import java.util.List;
 
 public class Emmitent {
