@@ -1,4 +1,6 @@
 package ru.luxoft.courses.hierarchy.operation;
 
-public class OperType {
+public enum OperType {
+    SALE,
+    BYE
 }

@@ -1,27 +1,32 @@
 package ru.luxoft.courses.lab5;
 
-public class Currancy {
+public class Currency {
     private String name;
-    private float usdCource;
+    private float usdRate;
 
-    public Currancy(String name, float usdCource) {
+
+    public Currency(String name, float usdRate) {
         this.name = name;
-        this.usdCource = usdCource;
+        this.usdRate = usdRate;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public float getUsdRate() {
+        return usdRate;
     }
 
-    public float getUsdCource() {
-        return usdCource;
+    public void setUsdRate(float usdRate) {
+        this.usdRate = usdRate;
     }
 
-    public void setUsdCource(float usdCource) {
-        this.usdCource = usdCource;
+    @Override
+    public String toString() {
+        return "Currency{" +
+                "name='" + name + '\'' +
+                ", usdRate=" + usdRate +
+                '}';
     }
 }
