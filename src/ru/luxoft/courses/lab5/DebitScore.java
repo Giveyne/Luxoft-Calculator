@@ -1,5 +1,11 @@
 package ru.luxoft.courses.lab5;
 
+import com.sun.org.apache.xpath.internal.objects.XNull;
+import ru.luxoft.courses.lab5.annotation.Loggable;
+import ru.luxoft.courses.lab5.annotation.MethodLimit;
+import ru.luxoft.courses.lab5.annotation.OperationLimitATM;
+
+@Loggable
 public class DebitScore extends Score {
 
     public DebitScore(Account owner, Integer number, Money balance) {
