@@ -1,5 +1,8 @@
 package ru.luxoft.courses.lab5;
 
+import ru.luxoft.courses.lab5.annotation.Loggable;
+
+@Loggable
 public class CreditScore extends Score {
 
     public CreditScore(Account owner, Integer number, Money balance) {
