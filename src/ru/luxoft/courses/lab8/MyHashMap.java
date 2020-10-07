@@ -11,7 +11,7 @@ public class MyHashMap<K, V> {
     private int size = 0;
 
     @SuppressWarnings({"unchecked"})
-    private EntryMyMap<K, V>[] table = (EntryMyMap<K, V>[]) new EntryMyMap[capacity];
+    private EntryMyMap<K, V>[] table = new EntryMyMap[capacity];
 
 
     private int location(K key) {
@@ -30,11 +30,12 @@ public class MyHashMap<K, V> {
 
     private void resize(int newLength) {
         @SuppressWarnings({"unchecked"})
-        EntryMyMap<K, V>[] newArray = (EntryMyMap<K, V>[]) new EntryMyMap[newLength];
+        EntryMyMap<K, V>[] newArray = new EntryMyMap[newLength];
         EntryMyMap<K, V>[] oldArray = table;
         table = newArray;
         capacity = newLength;
         size = 0;
+        //так не сработает. Пустые элементы тоже будут перенесены и size нового мапа будет больше исходного.
         Arrays.stream(oldArray)
                 .filter(Objects::nonNull)
                 .forEach(e -> put(e.getKey(), e.getVal()));
