@@ -1,0 +1,1 @@
+create table products(id integer, description varchar(100), rate float, quantity integer);
